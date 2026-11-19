@@ -1,0 +1,30 @@
+.env
+.python/
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.DS_Store
+.ipynb_checkpoints/
+# Never check in raw personal/local photos, trained models, or bulky exports.
+data/dataset_1/
+data/dataset_2/
+data/raw/**
+!data/raw/public/
+!data/raw/local/
+!data/raw/public/.gitkeep
+!data/raw/local/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
+artifacts/models/**
+!artifacts/models/.gitkeep
+artifacts/metrics/**
+!artifacts/metrics/.gitkeep
+artifacts/*.json
+artifacts/backups/
+artifacts/waste_classification_v2_spotcheck.jpg
+data/waste_classification_v2/
+# Deployment inputs: include only the selected binary model and its mapping/threshold manifest.
+!artifacts/model_manifest.json
+!artifacts/models/binary_mobilenetv2_finetuned.keras
+artifacts/*.png

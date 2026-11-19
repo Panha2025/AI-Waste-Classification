@@ -1,0 +1,66 @@
+{
+  "model": "binary_mobilenetv2_finetuned",
+  "model_path": "/Users/panha/Downloads/WasteAI_Telegram_Final_Project/artifacts/models/binary_mobilenetv2_finetuned.keras",
+  "class_order": [
+    "non_recyclable",
+    "recyclable"
+  ],
+  "decision_threshold_recyclable_probability": 0.33,
+  "threshold_selection": "validation balanced accuracy, tie-break macro F1 and non-recyclable recall, subject to recyclable recall >= 0.80",
+  "recyclable_recall_floor_relaxed": false,
+  "test_label_provenance": "provisional source-folder mapping; no binary label human-verified",
+  "test": {
+    "n_images": 1150,
+    "class_labels": [
+      "non_recyclable",
+      "recyclable"
+    ],
+    "accuracy": 0.8982608695652174,
+    "balanced_accuracy": 0.8882248322535196,
+    "macro_precision": 0.6942941693253804,
+    "macro_recall": 0.8882248322535196,
+    "macro_f1": 0.7454688537491085,
+    "weighted_f1": 0.914894792723649,
+    "confusion_matrix": [
+      [
+        71,
+        10
+      ],
+      [
+        107,
+        962
+      ]
+    ],
+    "per_class": {
+      "non_recyclable": {
+        "precision": 0.398876404494382,
+        "recall": 0.8765432098765432,
+        "f1-score": 0.5482625482625483,
+        "support": 81.0
+      },
+      "recyclable": {
+        "precision": 0.9897119341563786,
+        "recall": 0.8999064546304958,
+        "f1-score": 0.9426751592356688,
+        "support": 1069.0
+      },
+      "accuracy": 0.8982608695652174,
+      "macro avg": {
+        "precision": 0.6942941693253804,
+        "recall": 0.8882248322535196,
+        "f1-score": 0.7454688537491085,
+        "support": 1150.0
+      },
+      "weighted avg": {
+        "precision": 0.9480965620671423,
+        "recall": 0.8982608695652174,
+        "f1-score": 0.914894792723649,
+        "support": 1150.0
+      }
+    }
+  },
+  "local_test": {
+    "n_images": 0,
+    "warning": "No local images"
+  }
+}

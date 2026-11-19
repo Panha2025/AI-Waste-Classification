@@ -1,0 +1,11 @@
+# Recommended: CPython 3.11 on macOS Apple Silicon, Windows or Linux.
+tensorflow>=2.17,<2.22
+python-telegram-bot>=22.0,<23.0
+Pillow>=10.0,<13.0
+numpy>=1.26,<2.4
+pandas>=2.1,<3.0
+scikit-learn>=1.4,<2.0
+matplotlib>=3.8,<4.0
+python-dotenv>=1.0,<2.0
+psutil>=5.9,<8.0
+pytest>=8.0,<10.0

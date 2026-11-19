@@ -1,0 +1,22 @@
+{
+  "global": {
+    "cardboard": "cardboard",
+    "glass": "glass",
+    "metal": "metal",
+    "paper": "paper",
+    "plastic": "plastic",
+    "trash": "trash"
+  },
+  "sources": {
+    "public/trashnet": {
+      "cardboard": "cardboard", "glass": "glass", "metal": "metal",
+      "paper": "paper", "plastic": "plastic", "trash": "trash"
+    },
+    "public/garbage_classification_v2": {
+      "cardboard": "cardboard", "glass": "glass", "metal": "metal",
+      "paper": "paper", "plastic": "plastic", "trash": "trash"
+    }
+  },
+  "label_semantics": "Dataset-provided source categories. These are six-way material/waste-category labels, not human-verified recyclability or local acceptance decisions.",
+  "notes": "Preserve the original dataset categories. Local recycling acceptance varies by item condition and local collection rules; the model provides category predictions, not authoritative disposal decisions."
+}

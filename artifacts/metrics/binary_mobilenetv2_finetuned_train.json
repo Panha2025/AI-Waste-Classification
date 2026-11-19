@@ -1,0 +1,135 @@
+{
+  "model": "mobilenetv2_finetuned",
+  "task": "direct binary softmax classification",
+  "model_path": "/Users/panha/Downloads/WasteAI_Telegram_Final_Project/artifacts/models/binary_mobilenetv2_finetuned.keras",
+  "initialized_from": "/Users/panha/Downloads/WasteAI_Telegram_Final_Project/artifacts/models/binary_mobilenetv2.keras",
+  "created_utc": "2026-11-19T01:43:14.009163+00:00",
+  "configuration": {
+    "seed": 42,
+    "epochs_requested": 6,
+    "epochs_completed": 6,
+    "batch_size": 32,
+    "patience": 2,
+    "optimizer": "Adam",
+    "fine_tune_learning_rate": 1e-05,
+    "unfrozen_upper_backbone_layers": 20,
+    "batch_normalization_trainable": false,
+    "class_weight": {
+      "non_recyclable": 14.26595744680851,
+      "recyclable": 0.5376904570970329
+    },
+    "non_recyclable_weight_multiplier": 2.0,
+    "image_size": [
+      224,
+      224
+    ],
+    "class_order": [
+      "non_recyclable",
+      "recyclable"
+    ],
+    "train_images": 5364,
+    "validation_images": 1150,
+    "label_origin": "source-folder mapped, provisional, not human-verified"
+  },
+  "training_seconds": 143.0,
+  "hardware": {
+    "recorded_utc": "2026-11-19T01:43:14.009190+00:00",
+    "operating_system": "macOS-26.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_logical_cores": 10,
+    "python": "3.11.16",
+    "ram_gib": 16.0,
+    "cpu_physical_cores": 10,
+    "cpu_model": "Not available",
+    "tensorflow_version": "2.21.0",
+    "tensorflow_gpus": [],
+    "tensorflow_cpus": [
+      "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+    ]
+  },
+  "validation_metrics_argmax_threshold_0_5": {
+    "n_images": 1150,
+    "class_labels": [
+      "non_recyclable",
+      "recyclable"
+    ],
+    "accuracy": 0.8565217391304348,
+    "balanced_accuracy": 0.90000461952442,
+    "macro_precision": 0.6595717234262126,
+    "macro_recall": 0.90000461952442,
+    "macro_f1": 0.6997336768264025,
+    "weighted_f1": 0.8861435511421473,
+    "confusion_matrix": [
+      [
+        77,
+        4
+      ],
+      [
+        161,
+        908
+      ]
+    ],
+    "per_class": {
+      "non_recyclable": {
+        "precision": 0.3235294117647059,
+        "recall": 0.9506172839506173,
+        "f1-score": 0.4827586206896552,
+        "support": 81.0
+      },
+      "recyclable": {
+        "precision": 0.9956140350877193,
+        "recall": 0.8493919550982226,
+        "f1-score": 0.9167087329631499,
+        "support": 1069.0
+      },
+      "accuracy": 0.8565217391304348,
+      "macro avg": {
+        "precision": 0.6595717234262126,
+        "recall": 0.90000461952442,
+        "f1-score": 0.6997336768264025,
+        "support": 1150.0
+      },
+      "weighted avg": {
+        "precision": 0.9482759007493158,
+        "recall": 0.8565217391304348,
+        "f1-score": 0.8861435511421473,
+        "support": 1150.0
+      }
+    }
+  },
+  "history": {
+    "accuracy": [
+      0.823825478553772,
+      0.8042505383491516,
+      0.8372483253479004,
+      0.8543996810913086,
+      0.8777031898498535,
+      0.876771092414856
+    ],
+    "loss": [
+      0.6273034811019897,
+      0.4091854989528656,
+      0.3647964596748352,
+      0.32891184091567993,
+      0.2803519368171692,
+      0.274260938167572
+    ],
+    "val_accuracy": [
+      0.7156521677970886,
+      0.7565217614173889,
+      0.7417391538619995,
+      0.7930434942245483,
+      0.7973912954330444,
+      0.856521725654602
+    ],
+    "val_loss": [
+      0.5843367576599121,
+      0.5491810441017151,
+      0.5925348401069641,
+      0.48215171694755554,
+      0.46658459305763245,
+      0.33043989539146423
+    ]
+  }
+}

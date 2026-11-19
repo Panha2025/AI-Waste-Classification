@@ -1,0 +1,15 @@
+# Start with an empty build context, then allow only inference runtime files.
+*
+!Dockerfile
+!.dockerignore
+!requirements-deploy.txt
+!waste_ai/
+!waste_ai/__init__.py
+!waste_ai/config.py
+!waste_ai/metrics.py
+!waste_ai/inference.py
+!waste_ai/bot.py
+!artifacts/
+!artifacts/model_manifest.json
+!artifacts/models/
+!artifacts/models/binary_mobilenetv2_finetuned.keras
