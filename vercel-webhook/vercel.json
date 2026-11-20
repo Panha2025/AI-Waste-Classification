@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/webhook.py": {
+      "maxDuration": 60,
+      "includeFiles": "artifacts/**",
+      "excludeFiles": "{tests/**,scripts/**,README.md,.env.example,*.md}"
+    },
+    "api/health.py": {
+      "maxDuration": 10,
+      "excludeFiles": "{tests/**,scripts/**,artifacts/**,waste_ai/**,*.md}"
+    }
+  }
+}

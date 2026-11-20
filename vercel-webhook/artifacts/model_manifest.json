@@ -1,0 +1,28 @@
+{
+  "selected_model": "binary_mobilenetv2_finetuned",
+  "model_path": "artifacts/models/binary_mobilenetv2_finetuned.keras",
+  "selection_method": "highest validation balanced accuracy subject to >=0.80 recyclable recall; tie-break macro F1 and non-recyclable recall; test not used",
+  "validation_threshold": 0.33,
+  "validation_metrics": {
+    "model": "binary_mobilenetv2_finetuned",
+    "threshold": 0.33,
+    "balanced_accuracy": 0.9090819850096432,
+    "macro_f1": 0.7612612869987867,
+    "non_recyclable_precision": 0.42045454545454547,
+    "non_recyclable_recall": 0.9135802469135802,
+    "recyclable_precision": 0.9928131416837782,
+    "recyclable_recall": 0.9045837231057062,
+    "recyclable_recall_floor_relaxed": false
+  },
+  "binary_threshold": 0.33,
+  "image_size": [
+    224,
+    224
+  ],
+  "labels": [
+    "non_recyclable",
+    "recyclable"
+  ],
+  "output_type": "direct two-class softmax probabilities",
+  "label_provenance": "source-folder-derived provisional labels; none human-verified"
+}

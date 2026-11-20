@@ -1,0 +1,5 @@
+# Python 3.13; Linux CPU TensorFlow 2.21 wheel is available for this runtime.
+tensorflow-cpu==2.21.0
+numpy==2.3.5
+Pillow==12.3.0
+httpx==0.28.1
